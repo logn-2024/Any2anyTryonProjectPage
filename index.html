@@ -72,6 +72,19 @@
   </div>
 </section>
 
+<!-- Teaser image -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <img src="static/images/teaser.png" alt="Teaser" style="width: 70%"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -79,7 +92,8 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- Add your abstract here -->
+Image-based virtual try-on (VTON) aims to generate a virtual try-on result by transferring an input garment onto a target person's image. However, the scarcity of paired garment-model data makes it challenging for existing methods to achieve high generalization and quality in VTON. Also, it limits the ability to generate mask-free try-ons. To tackle the data scarcity problem, approaches such as Stable Garment and MMTryon use a synthetic data strategy, effectively increasing the amount of paired data on the model side. However, existing methods are typically limited to performing specific try-on tasks and lack user-friendliness.
+To enhance the generalization and controllability of VTON generation, we propose Any2AnyTryon, which can generate try-on results based on different textual instructions and model garment images to meet various needs, eliminating the reliance on masks, poses, or other conditions. Specifically, we first construct the virtual try-on dataset LAION-Garment, the largest known open-source garment try-on dataset. Then, we introduce adaptive position embedding, which enables the model to generate satisfactory outfitted model images or garment images based on input images of different sizes and categories, significantly enhancing the generalization and controllability of VTON generation. In our experiments, we demonstrate the effectiveness of our Any2AnyTryon and compare it with existing methods. The results show that Any2AnyTryon enables flexible, controllable, and high-quality image-based virtual try-on generation.
         </div>
       </div>
     </div>
@@ -91,7 +105,11 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Framework Overview</h2>
-      <img src="static/images/framework.png" alt="Framework Overview"/>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <img src="static/images/framework.png" alt="Framework Overview" style="width: 70%"/>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -105,24 +123,24 @@
       <!-- Garment Reconstruction -->
       <h3 class="title is-4">Garment Reconstruction</h3>
       <div class="columns is-centered">
-        <div class="column">
-          <img src="static/images/tryoff_compare.png" alt="Garment Reconstruction Results"/>
+        <div class="column is-8">
+          <img src="static/images/supp_tryoff_wild.png" alt="Garment Reconstruction Results" style="width: 70%"/>
         </div>
       </div>
 
       <!-- Model-free Virtual Try-on -->
       <h3 class="title is-4">Model-free Virtual Try-on</h3>
       <div class="columns is-centered">
-        <div class="column">
-          <img src="static/images/model_generation.png" alt="Model-free VTON Results"/>
+        <div class="column is-8">
+          <img src="static/images/model_generation_supp.png" alt="Model-free VTON Results" style="width: 70%"/>
         </div>
       </div>
 
       <!-- Virtual Try-on -->
       <h3 class="title is-4">Virtual Try-on</h3>
       <div class="columns is-centered">
-        <div class="column">
-          <img src="static/images/tryon_compare.png" alt="VTON Results"/>
+        <div class="column is-8">
+          <img src="static/images/tryon_compare.png" alt="VTON Results" style="width: 70%"/>
         </div>
       </div>
     </div>
